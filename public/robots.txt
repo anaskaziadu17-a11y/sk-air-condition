@@ -1,0 +1,13 @@
+# All search engines are allowed
+User-agent: *
+Allow: /
+
+# Disallow private or admin areas (if they exist)
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://sk-air-condition.vercel.app/sitemap.xml
+
+# Crawl delay (optional - 1 second between requests)
+Crawl-delay: 1
