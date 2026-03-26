@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ice-100: #e0f2fe;
+  --color-ice-200: #bae6fd;
+  --color-ice-300: #7dd3fc;
+  --color-ice-400: #38bdf8;
+  --color-ice-500: #0ea5e9;
+  --color-ice-600: #0284c7;
+  --color-ice-700: #0369a1;
+  --color-ice-800: #075985;
+  --color-ice-900: #0c4a6e;
+  --color-ice-950: #082f49;
+
+  --animate-glow: glow 2s ease-in-out infinite alternate;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-snow: snow 10s linear infinite;
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0ea5e9, 0 0 40px #0ea5e9;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #38bdf8, 0 0 40px #38bdf8, 0 0 50px #38bdf8;
+    }
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+
+  @keyframes snow {
+    0% { transform: translateY(-10vh) translateX(0); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(100vh) translateX(20px); opacity: 0; }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-ice-950 text-white font-sans selection:bg-ice-400 selection:text-ice-950;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+  
+  .glass-dark {
+    @apply bg-black/30 backdrop-blur-lg border border-white/10 shadow-2xl;
+  }
+
+  .btn-glow {
+    @apply relative overflow-hidden transition-all duration-300 hover:shadow-[0_0_20px_rgba(14,165,233,0.6)] active:scale-95;
+  }
+
+  .text-glow {
+    @apply animate-glow;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-ice-950;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-ice-600 rounded-full hover:bg-ice-500;
+}
+
+.snow-particle {
+  @apply absolute pointer-events-none bg-white rounded-full opacity-0 animate-snow;
+}
