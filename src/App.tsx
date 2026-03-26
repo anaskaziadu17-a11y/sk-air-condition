@@ -23,6 +23,7 @@ import {
   Star,
   CheckCircle2
 } from 'lucide-react';
+import Services from './components/Services';
 
 // --- Constants ---
 const PHONE_NUMBER = "7802984111";
@@ -823,6 +824,7 @@ export default function App() {
         <OfferSection onBookNow={scrollToBooking} />
         <ServicesSection />
         <TrustSection />
+        <Services />
         <ServiceArea />
       </main>
       
