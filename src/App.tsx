@@ -773,7 +773,7 @@ const LoadingScreen = () => {
     <motion.div 
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[100] bg-ice-950 flex flex-center justify-center items-center"
+      className="fixed inset-0 z-[100] bg-ice-950 flex justify-center items-center"
     >
       <div className="text-center">
         <motion.div 
