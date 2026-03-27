@@ -5,10 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#1f2937" />
-    <meta name="description" content="Best AC repair and service in Ahmedabad. Fast & reliable SK Air Condition - 24/7 service for all AC models. Expert technicians, affordable rates, same-day service available." />
-    <meta name="keywords" content="AC repair Ahmedabad, AC service Ahmedabad, air conditioning repair, AC maintenance, HVAC service, AC installation" />
+    <meta name="title" content="AC Repair & Service in Kalol & Gandhinagar | SK Air Condition" />
+    <meta name="description" content="Professional AC repair, service & installation in Kalol & Gandhinagar. SK Air Condition - 24/7 emergency service, expert technicians, affordable rates. Same-day service available." />
+    <meta name="keywords" content="AC repair Kalol, AC service Kalol, AC repair Gandhinagar, AC service Gandhinagar, air conditioning repair, AC maintenance, AC installation, HVAC service" />
     <meta name="author" content="SK Air Condition" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta http-equiv="content-language" content="en-IN" />
+    <meta name="language" content="English" />
     
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="EAD2KbK1vDZeOt-6ntjnntK7SoUIfTyeodkWawF2Xtk" />
@@ -18,18 +21,20 @@
     
     <!-- Open Graph Meta Tags (Social Media & Sharing) -->
     <meta property="og:type" content="business.business" />
-    <meta property="og:title" content="AC Repair & Service in Ahmedabad | SK Air Condition" />
-    <meta property="og:description" content="Best AC repair and service in Ahmedabad. Fast & reliable SK Air Condition - 24/7 service for all AC models." />
+    <meta property="og:title" content="AC Repair & Service in Kalol & Gandhinagar | SK Air Condition" />
+    <meta property="og:description" content="Professional AC repair and service in Kalol & Gandhinagar. 24/7 emergency service with expert technicians. Fast, reliable, affordable." />
     <meta property="og:url" content="https://sk-air-condition.vercel.app/" />
     <meta property="og:image" content="https://sk-air-condition.vercel.app/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="SK Air Condition" />
     
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="AC Repair & Service in Ahmedabad | SK Air Condition" />
-    <meta name="twitter:description" content="Best AC repair and service in Ahmedabad. Fast & reliable SK Air Condition." />
+    <meta name="twitter:title" content="AC Repair & Service in Kalol & Gandhinagar | SK Air Condition" />
+    <meta name="twitter:description" content="Professional AC repair, service & installation. 24/7 emergency service." />
     <meta name="twitter:image" content="https://sk-air-condition.vercel.app/og-image.jpg" />
+    <meta name="twitter:creator" content="@skaircondition" />
     
     <!-- Structured Data (JSON-LD) - Local Business Schema -->
     <script type="application/ld+json">
@@ -37,30 +42,45 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "SK Air Condition",
-      "description": "Professional AC repair and service in Ahmedabad",
+      "alternateName": "SK AC Repair",
+      "description": "Professional AC repair, service and installation in Kalol, Gandhinagar",
       "url": "https://sk-air-condition.vercel.app/",
       "telephone": "+917802984111",
-      "email": "info@sk-air-condition.com",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "telephone": "+917802984111",
+        "areaServed": ["Kalol", "Gandhinagar"],
+        "availableLanguage": "en-IN"
+      },
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Ahmedabad",
-        "addressLocality": "Ahmedabad",
+        "streetAddress": "Kalol, Gandhinagar",
+        "addressLocality": "Kalol & Gandhinagar",
         "addressRegion": "Gujarat",
-        "postalCode": "380000",
+        "postalCode": "382721",
         "addressCountry": "IN"
       },
+      "serviceArea": [
+        {
+          "@type": "City",
+          "name": "Kalol",
+          "url": "/ac-repair-kalol"
+        },
+        {
+          "@type": "City",
+          "name": "Gandhinagar",
+          "url": "/ac-service-gandhinagar"
+        }
+      ],
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "23.0225",
-        "longitude": "72.5714"
+        "latitude": "23.1815",
+        "longitude": "72.6369"
       },
       "image": "https://sk-air-condition.vercel.app/og-image.jpg",
-      "sameAs": [
-        "https://www.facebook.com/sk-air-condition",
-        "https://www.whatsapp.com",
-        "https://www.google.com/maps"
-      ],
       "priceRange": "₹₹",
+      "paymentAccepted": "Cash, Credit Card, UPI, Bank Transfer",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -73,29 +93,60 @@
         "ratingCount": "150",
         "bestRating": "5",
         "worstRating": "1"
-      }
+      },
+      "sameAs": [
+        "https://www.facebook.com/sk-air-condition",
+        "https://www.google.com/maps/search/SK+Air+Condition",
+        "https://www.justdial.com"
+      ]
     }
     </script>
 
-    <!-- Service Schema -->
+    <!-- Service Schema - Multiple Services -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "name": "AC Repair & Service",
+      "name": "AC Repair, Service & Installation",
       "provider": {
         "@type": "LocalBusiness",
-        "name": "SK Air Condition"
+        "name": "SK Air Condition",
+        "telephone": "+917802984111"
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Ahmedabad"
-      },
-      "serviceType": ["AC Repair", "AC Service", "AC Installation", "AC Maintenance"]
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Kalol"
+        },
+        {
+          "@type": "City",
+          "name": "Gandhinagar"
+        }
+      ],
+      "serviceType": ["AC Repair", "AC Service", "AC Installation", "AC Maintenance", "Gas Refilling", "Water Leak Repair"],
+      "description": "Professional AC repair, service and installation for all brands including Daikin, Voltas, LG, IFB and more in Kalol and Gandhinagar"
     }
     </script>
 
-    <title>AC Repair & Service in Ahmedabad | SK Air Condition</title>
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SK Air Condition",
+      "url": "https://sk-air-condition.vercel.app/",
+      "logo": "https://sk-air-condition.vercel.app/logo.png",
+      "description": "Leading AC repair and service provider in Kalol and Gandhinagar with 24/7 emergency support",
+      "telephone": "+917802984111",
+      "sameAs": [
+        "https://www.facebook.com/sk-air-condition",
+        "https://www.instagram.com/sk-air-condition",
+        "https://www.google.com/maps"
+      ]
+    }
+    </script>
+
+    <title>AC Repair & Service in Kalol & Gandhinagar | SK Air Condition - 24/7 Service</title>
   </head>
   <body>
     <div id="root"></div>
